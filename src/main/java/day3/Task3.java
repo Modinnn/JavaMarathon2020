@@ -6,11 +6,7 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i < 10; i++){
-            if (i == 6) {
-                break;
-            }
-
+        for (int i = 1; i < 6; i++){
             double number = scanner.nextDouble();
             double divider = scanner.nextDouble();
 
@@ -20,5 +16,6 @@ public class Task3 {
             }
             System.out.println((double)(number / divider));
         }
+        scanner.close();
     }
 }
