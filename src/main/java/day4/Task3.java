@@ -12,13 +12,9 @@ public class Task3 {
         int lineNumberMax = 0;
 
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = r.nextInt(50);
-            }
-        }
-        for (int i = 0; i < m; i++) {
             int sumCurrentLine = 0;
             for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = r.nextInt(50);
                 sumCurrentLine += array[i][j];
             }
             if (sumCurrentLine > sumMax) {

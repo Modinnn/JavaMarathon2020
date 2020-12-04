@@ -25,8 +25,7 @@ public class Task1 {
             }
             if (arr % 2 == 0) {
                 qEven++;
-            }
-            if (arr % 2 != 0) {
+            } else {
                 qOdd++;
             }
             sum +=arr;
