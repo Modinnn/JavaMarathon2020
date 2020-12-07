@@ -1,4 +1,4 @@
-package day6;
+package day7;
 
 public class Airplane {
     private String producer;
@@ -33,5 +33,16 @@ public class Airplane {
 
     public void fillUp(int filledVolume) {
         fuel += filledVolume;
+    }
+
+    public static void compareAirplanes(Airplane a, Airplane b) {
+        if (a.length > b.length) {
+            System.out.print(a.producer + " длиннее");
+        }
+        else if (a.length < b.length) {
+            System.out.print(b.producer + " длиннее");
+        } else {
+            System.out.println("Длины самолетов равны");
+        }
     }
 }
