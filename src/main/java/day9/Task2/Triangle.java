@@ -2,9 +2,9 @@ package day9.Task2;
 
 public class Triangle extends Figure {
 
-    double lengthSide1;
-    double lengthSide2;
-    double lengthSide3;
+    private double lengthSide1;
+    private double lengthSide2;
+    private double lengthSide3;
 
     public Triangle(String color, double lengthSide1, double lengthSide2, double lengthSide3) {
         super(color);

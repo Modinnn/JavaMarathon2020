@@ -2,7 +2,7 @@ package day9.Task2;
 
 public class Circle extends Figure{
 
-    double radius;
+    private double radius;
 
     public Circle(String color, double radius) {
         super(color);
@@ -15,11 +15,11 @@ public class Circle extends Figure{
 
     @Override
     public double area() {
-        return 3.1415 * getRadius() * getRadius();
+        return Math.PI * getRadius() * getRadius();
     }
 
     @Override
     public double perimeter() {
-        return 2 * 3.1415 * getRadius();
+        return 2 * Math.PI * getRadius();
     }
 }
