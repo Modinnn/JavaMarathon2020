@@ -17,7 +17,7 @@ public class Task1 {
         long start2 = System.currentTimeMillis();
 
         for (int i = 0; i < 20001; i++) {
-            strungBuild = strungBuild.append(i).append(" ");
+            strungBuild.append(i).append(" ");
         }
         System.out.println(strungBuild);
         long finish2 = System.currentTimeMillis();
