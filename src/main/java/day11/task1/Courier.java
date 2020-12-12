@@ -28,7 +28,7 @@ public class Courier implements Worker {
     @Override
     public void doWork() {
         salary += 100;
-        warehouse.setCountDeliveredOrders();
+        warehouse.incrementCountDeliveredOrders();
         if (warehouse.getCountDeliveredOrders() == 10000) {
             bonus();
         }

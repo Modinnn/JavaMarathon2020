@@ -24,9 +24,10 @@ public class Task3 {
 
     public static List<MusicBand> groupsAfter2000(List<MusicBand> bands) {
         List<MusicBand> copiedBands = new ArrayList<>();
-        copiedBands.addAll(bands);
-        for (int i = 0; i < copiedBands.size(); i++) {
-            copiedBands.removeIf((MusicBand element) -> element.year < 2000);
+        for (MusicBand element: bands) {
+            if (element.getYear() > 1999) {
+                copiedBands.add(element);
+            }
         }
         System.out.println(copiedBands);
         return copiedBands;

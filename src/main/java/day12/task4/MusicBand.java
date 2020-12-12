@@ -21,6 +21,7 @@ public class MusicBand {
 
     public static void transferMembers(MusicBand a, MusicBand b) {
         b.getMembers().addAll(a.getMembers());
+        a.getMembers().clear();
     }
 
     public void printMembers(MusicBand band) {

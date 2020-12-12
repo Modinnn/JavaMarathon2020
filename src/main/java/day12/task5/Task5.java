@@ -14,6 +14,7 @@ public class Task5 {
         System.out.println(band1);
         System.out.println(band2);
         MusicBand.transferMembers(band1, band2);
+        System.out.println(band1);
         System.out.println(band2);
 
     }

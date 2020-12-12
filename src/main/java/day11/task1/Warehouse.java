@@ -12,13 +12,11 @@ public class Warehouse {
         return countDeliveredOrders;
     }
 
-    public void setCountPickedOrders() {
+    public void incrementCountPickedOrders() {
         countPickedOrders += 1;
     }
 
-    public void setCountDeliveredOrders() {
-        countDeliveredOrders += 1;
-    }
+    public void incrementCountDeliveredOrders() { countDeliveredOrders += 1; }
 
     @Override
     public String toString() {
