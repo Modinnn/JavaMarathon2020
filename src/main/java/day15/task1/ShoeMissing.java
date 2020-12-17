@@ -31,7 +31,7 @@ public class ShoeMissing {
                 }
             }
             scanner.close();
-            PrintWriter pw = new PrintWriter(new File("src/main/resources/missing_shoes.txt"));
+            PrintWriter pw = new PrintWriter("src/main/resources/missing_shoes.txt");
             for (ShoeMissing element: list) {
                 pw.println(element.toString());
             }

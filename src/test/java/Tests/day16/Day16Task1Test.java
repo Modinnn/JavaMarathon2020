@@ -1,11 +1,11 @@
 //package Tests.day16;
 //
-//import Tests.AbstractTest;
-//import day16.Task1;
-//import org.junit.jupiter.api.Assertions;
-//import org.junit.jupiter.api.Test;
+//        import Tests.AbstractTest;
+//        import day16.Task1;
+//        import org.junit.jupiter.api.Assertions;
+//        import org.junit.jupiter.api.Test;
 //
-//import java.io.File;
+//        import java.io.File;
 //
 //class Day16Task1Test extends AbstractTest {
 //
