@@ -21,7 +21,7 @@ public class Task2 {
             }
         }
         File file2 = new File("file2.txt");
-        if(file1.createNewFile()){
+        if(file2.createNewFile()){
             System.out.println("file2.txt файл создан");
         } else {
             System.out.println("file2.txt файл уже существует");
@@ -31,11 +31,11 @@ public class Task2 {
             String line = scanner.nextLine();
             String[] numbersString = line.split(" ");
             double averageValue = 0;
-            double sum = 0;
+            int sum = 0;
             int count = 1;
             try (PrintWriter pw = new PrintWriter("file2.txt")) {
                 for (int i = 0; i < numbersString.length; i++) {
-                    sum += Double.parseDouble(numbersString[i]);
+                    sum += Integer.parseInt(numbersString[i]);
                     count++;
                     if (count == 20) {
                         averageValue = sum / 20;
